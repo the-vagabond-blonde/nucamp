@@ -32,6 +32,9 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <div class="col-md-4 col-xl-2 mt-4">
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info">Reserve Campsite</a>
+                </div>
             </div>
         </div>
     </header>
@@ -63,7 +66,7 @@
 
             <div class="col">
                 <div class="media">
-                    <img class="d-flex ml-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg"
                         alt="Breadcrumb Trail" />
                     <div class="media-body align-self-center">
                         <h3>Our Campsites</h3>
@@ -89,7 +92,7 @@
                             on
                             the shores of the pristine React Lake is a favorite for fly fishers.</p>
                     </div>
-                    <img class="d-flex mr-3 img-thumbnail" alt="react lake" src="img/react-lake-thumb.jpg">
+                    <img class="d-flex ml-3 img-thumbnail" alt="react lake" src="img/react-lake-thumb.jpg">
                 </div>
             </div>
         </div>
@@ -119,44 +122,53 @@
                 <div class="card">
                     <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
                     <div class="card-body">
-                       
-                        <form>
-                            <div class="row">
+                        <form id="reserveForm">
+                            <div class="form-group row">
                                 <div class="col-sm-6 mx-auto">
-                                <label>Number of Campers</label>
-                            </div>
+                                    <label for="numCampers">Number of Campers</label>
+                                </div>
                                 <div class="col">
-                                    <select id="numCampers" name="numCampers">
-                                        <option> Select
-                                        <option>1
-                                        <option>2
-                                        <option>3
-                                        <option>4
-                                        <option>5
-                                        <option>6
+                                    <select id="numCampers" name="numCampers" class="form-control">
+                                        <option> Select</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
                                     </select>
+
                                 </div>
                             </div>
 
-                                <div class="row">
-                                    <div class="col-sm-6 mx-auto">
+
+                            <div class="form-group row">
+                                <div class="col-sm-6 mx-auto">
                                     <label for="date">Date</label>
                                 </div>
-                                    <div class="col">
-                                        <input type="date" id="date" name="date">
-                                    </div>
-
+                                <div class="col">
+                                    <input type="date" id="date" name="date">
+                                </div>
                             </div>
 
+                            <div class="form-group row">
+                                <div class="col">
+                                    <button type="submit" class="btn btn-primary">Search</button>
+
+                                </div>
+                            </div>
                         </form>
                     </div>
+
+
                 </div>
-
             </div>
+
         </div>
-
-
     </div>
+
+
+
 
     <footer class="site-footer">
         <div class="container">
