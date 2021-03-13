@@ -18,15 +18,11 @@ $(function() {
 $('#reserveModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) 
     var recipient = button.data('whatever') 
-    var modal = $(this)
-    modal.find('.modal-title').text('New message to ' + recipient)
-    modal.find('.modal-body input').val(recipient)
+    var modal = $(this) 
   })
 
   $('#loginModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) 
     var recipient = button.data('whatever') 
     var modal = $(this)
-    modal.find('.modal-title').text('Login')
-    modal.find('.modal-body input').val(recipient)
   })
